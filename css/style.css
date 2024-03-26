@@ -1,0 +1,145 @@
+/* Base styles remain the same */
+
+/* Setting base font family, color, and background color */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Styling for the navigation bar */
+.top-nav ul {
+    list-style: none; /* Removing default list style */
+    background-color: #3a5f0b; /* Setting background color */
+    text-align: center; /* Centering navigation links */
+    padding: 0; /* Removing default padding */
+    margin: 0; /* Removing default margin */
+}
+
+/* CSS for centering the logo */
+.logo {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+.logo img {
+    max-width: 100%; /* Ensure the logo doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Styling for navigation list items */
+.top-nav ul li {
+    display: inline-block; /* Displaying list items in a row */
+}
+
+/* Styling for navigation links */
+.top-nav ul li a {
+    text-decoration: none; /* Removing underline from links */
+    color: white; /* Setting text color */
+    padding: 15px 20px; /* Adding padding to links */
+    display: block; /* Displaying links as block elements */
+}
+
+/* Styling for navigation items and links on hover */
+.top-nav ul li:hover, .top-nav ul li:hover a {
+    background-color: #2e4a07; /* Changing background color on hover */
+}
+
+/* Styling for dropdown submenu */
+.dropdown {
+    display: none; /* Initially hiding the dropdown menu */
+    position: absolute; /* Positioning the dropdown absolutely */
+    background-color: #3a5f0b; /* Setting background color */
+}
+
+/* Displaying dropdown menu on hover of parent list item */
+.top-nav ul li:hover .dropdown {
+    display: block; /* Displaying dropdown menu on hover */
+}
+
+/* Styling for dropdown list items */
+.top-nav ul li .dropdown li {
+    display: block; /* Displaying dropdown list items as block elements */
+}
+
+/* Styling for the hero section */
+.hero {
+    background-color: #e7f0db; /* Setting background color */
+    padding: 20px; /* Adding padding */
+    text-align: center; /* Centering text */
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #3a5f0b; /* Setting background color */
+    color: white; /* Setting text color */
+    text-align: center; /* Centering text */
+    padding: 10px 0; /* Adding padding */
+    position: fixed; /* Positioning the footer at the bottom */
+    bottom: 0; /* Aligning the footer to the bottom */
+    width: 100%; /* Setting width to 100% */
+}
+
+/* Styling for the Join Community paragraph and button */
+.join-community {
+    text-align: center; /* Center paragraph and button */
+    margin-top: 20px; /* Add space above the section */
+}
+
+.join-community p {
+    margin-bottom: 10px; /* Add space below the paragraph */
+}
+
+.cta-button {
+    background-color: #3a5f0b; /* Set button background color */
+    color: white; /* Set text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.cta-button:hover {
+    background-color: #2e4a07; /* Change background color on hover */
+}
+
+
+
+/* Responsive adjustments for the home page */
+
+/* Adjusting navigation padding for smaller screens */
+@media screen and (max-width: 768px) {
+    .top-nav ul li a {
+        padding: 10px 15px; /* Adjusting padding for smaller screens */
+    }
+}
+
+/* Adjusting hero section padding for smaller screens */
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 10px; /* Adjusting padding for smaller screens */
+    }
+}
+
+/* Styling for the additional sections with images in a row */
+
+/* Container for the additional sections */
+.additional-sections {
+    display: flex; /* Using flexbox to align images in a row */
+    flex-wrap: wrap; /* Allowing wrapping of images to next row if necessary */
+    justify-content: space-around; /* Distributing space between items */
+}
+
+/* Styling for each additional section within the container */
+.additional-section {
+    flex-basis: calc(25% - 20px); /* Setting width for each section (four sections in a row) */
+    margin: 10px; /* Adding margin around each section */
+    text-align: center; /* Centering content */
+}
+
+/* Styling for images within each additional section */
+.additional-section img {
+    width: 100%; /* Ensuring images fill the entire width of their container */
+    height: auto; /* Preserving aspect ratio */
+}
