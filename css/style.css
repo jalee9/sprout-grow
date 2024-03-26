@@ -78,6 +78,12 @@ footer {
     position: fixed; /* Positioning the footer at the bottom */
     bottom: 0; /* Aligning the footer to the bottom */
     width: 100%; /* Setting width to 100% */
+    }
+
+    /* Styling for footer links */
+    footer a {
+        color: white; /* Setting text color */
+    }
 }
 
 /* Styling for the Join Community paragraph and button */
